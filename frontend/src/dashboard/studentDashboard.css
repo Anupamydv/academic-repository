@@ -1,0 +1,120 @@
+/* --------- Page --------- */
+.dashboard {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  min-height: 100vh;
+}
+
+/* --------- Header --------- */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+}
+
+.logout-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* --------- Filter Card --------- */
+.filter-card {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.filter-grid select,
+.filter-grid button {
+  padding: 8px;
+}
+
+.view-btn {
+  background: #2c3e50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* --------- Table --------- */
+.result-card {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background: #2c3e50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+.action-btn {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+/* --------- Action Badges --------- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  margin: 2px;
+}
+
+.badge-view {
+  background: #3498db;
+  color: white;
+}
+
+.badge-q {
+  background: #e67e22;
+  color: white;
+}
+
+.badge-sol {
+  background: #2ecc71;
+  color: white;
+}

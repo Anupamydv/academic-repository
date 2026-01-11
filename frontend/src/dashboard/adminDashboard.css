@@ -1,0 +1,164 @@
+/* ===============================
+   Admin Dashboard – Global
+================================ */
+.admin-dashboard {
+  padding: 28px;
+  background: linear-gradient(135deg, #eef2f7, #f9fbfd);
+  min-height: 100vh;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+/* ===============================
+   Header
+================================ */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.admin-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.logout-btn {
+  background: #e11d48;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(225, 29, 72, 0.35);
+}
+
+.logout-btn:hover {
+  opacity: 0.9;
+}
+
+/* ===============================
+   Sections Grid
+================================ */
+.admin-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* ===============================
+   Admin Card
+================================ */
+.admin-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 6px solid #6366f1;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.admin-card:nth-child(2) { border-left-color: #10b981; }
+.admin-card:nth-child(3) { border-left-color: #f59e0b; }
+.admin-card:nth-child(4) { border-left-color: #ef4444; }
+
+.admin-card h3 {
+  margin-bottom: 14px;
+  color: #374151;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* ===============================
+   Inputs & Selects
+================================ */
+.admin-card input,
+.admin-card select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.admin-card input:focus,
+.admin-card select:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+/* ===============================
+   Add Button
+================================ */
+.add-btn {
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(124, 58, 237, 0.35);
+}
+
+.add-btn:hover {
+  opacity: 0.9;
+}
+
+/* ===============================
+   Lists
+================================ */
+.admin-list {
+  margin-top: 12px;
+  padding-left: 18px;
+}
+
+.admin-list li {
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 6px;
+}
+.admin-card {
+  overflow: hidden; /* 🔒 Prevent overflow */
+}
+
+/* Fix input overflow */
+.admin-card input,
+.admin-card select {
+  box-sizing: border-box;
+}
+
+/* Lists row alignment */
+.admin-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Delete button */
+.delete-btn {
+  background: #ef4444;
+  border: none;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+
+/* ===============================
+   Responsive
+================================ */
+@media (max-width: 900px) {
+  .admin-grid {
+    grid-template-columns: 1fr;
+  }
+}

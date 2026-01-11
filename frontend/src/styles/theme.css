@@ -1,0 +1,27 @@
+/* ===== Global Theme ===== */
+:root {
+  --bg-main: linear-gradient(135deg, #eef2f7, #f9fbfd);
+  --card-bg: #ffffff;
+  --primary: #4f46e5;
+  --secondary: #10b981;
+  --danger: #e11d48;
+  --text-main: #1f2937;
+  --text-muted: #6b7280;
+  --border: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}

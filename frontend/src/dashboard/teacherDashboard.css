@@ -1,0 +1,202 @@
+/* ===============================
+   Teacher Dashboard – Global
+================================ */
+.teacher-dashboard {
+  padding: 26px;
+  background: linear-gradient(135deg, #eef2f7, #f9fbfd);
+  min-height: 100vh;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+/* ===============================
+   Header
+================================ */
+.teacher-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.teacher-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.logout-btn {
+  background: #e11d48;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(225, 29, 72, 0.3);
+}
+
+/* ===============================
+   Academic Scope + Add Subject (ONE LINE)
+================================ */
+.subject-card.scope-card {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.subject-card.scope-card input,
+.subject-card.scope-card select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.scope-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+
+/* Create Subject Button */
+.create-btn {
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
+  color: white;
+  border: none;
+  padding: 11px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(124, 58, 237, 0.35);
+}
+
+.create-card {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+
+
+
+/* ===============================
+   Subjects Grid (2 cards per row)
+================================ */
+.subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+/* ===============================
+   Subject Card (COLORED + SQUARE)
+================================ */
+.subject-card {
+  background: linear-gradient(135deg, #ffffff, #f6f9ff);
+  padding: 18px;
+  border-radius: 12px;
+  border-left: 6px solid #6366f1;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.subject-card:nth-child(even) {
+  border-left-color: #10b981;
+}
+
+.subject-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #1f2937;
+}
+
+/* ===============================
+   Upload Grid (3 × 2 TABLE)
+================================ */
+.upload-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+/* ===============================
+   Upload Cell
+================================ */
+.upload-box {
+  background: #ffffff;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.upload-box b {
+  font-size: 13px;
+  font-weight: 700;
+  color: #374151;
+}
+
+/* ===============================
+   View Button (GREEN)
+================================ */
+.badge-view {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.badge-view:hover {
+  opacity: 0.9;
+}
+
+.badge-view {
+  background: #16a34a !important;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+
+.badge-view:hover {
+  background: #15803d !important;
+}
+
+/* File input */
+.upload-box input[type="file"] {
+  font-size: 12px;
+}
+
+/* ===============================
+   Responsive
+================================ */
+@media (max-width: 900px) {
+  .subjects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .upload-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* .subject-card.scope-card {
+    grid-template-columns: 1fr;
+  } */
+}
